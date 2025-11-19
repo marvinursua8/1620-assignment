@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "MyTupi";/* The name you’ll use in CSS */
+  src: url(font/MyTupi.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-header {
+  color: black;
+  position: sticky;       /* stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;         /* above everything else */
+  font-family: MyTupi;
+  font-size: 20px;
+}
+
+.nav-header a:hover,
+.nav-header a:focus,
+.nav-header a:active {
+  text-decoration: none;   /* no underline */
+  background: none;        /* remove any highlight */
+}
+
+.nav-header a{
+  color: white;
+  text-decoration: none;   /* remove underline */
+  margin: 0 20px;
+  font-weight: 500;
+  font-family: MyTupi;
+  outline: none;
+  mix-blend-mode: difference;
+}
+
+/* First navbar: black text on white section */
+.nav-dark a {
+  color: black;
+}
+
+/* Second navbar: white text for dark sections */
+.nav-light a {
+  color: white;
+}
+
+/* Place light nav UNDER dark nav */
+.nav-light {
+  mix-blend-mode: difference;
+}
+
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make sure page fills viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+/* Example content styling */
+header {
+  text-align: center;
+  color: white;
+  padding: 200px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  color: black;
+  text-align: center;
+  padding: 200px 20px;
+  font-family: MyTupi;
+  mix-blend-mode: difference;
+}
+
+
+
+.site-footer {
+  background-color: black; /* dark background */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-content h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: MyTupi;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  font-family: MyTupi;
+  text-decoration: none;
+  outline-offset: none;
+  font-family: MyTupi;
+}
+
+.footer-content a {
+    color: white;            /* keep the text white */
+  text-decoration: none;   /* remove underline */
+  margin: 0 20px;
+  font-weight: 500;
+  font-family: MyTupi;
+  outline: none;  
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-decoration: none;
+  outline: none;
+  font-family: MyTupi;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-decoration: none;
+  outline: none;
+  font-family: MyTupi;
+}
+
+.footer-nav a:hover {
+  text-decoration: none;
+  outline: none;
+}

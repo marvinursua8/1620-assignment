@@ -7,8 +7,101 @@
     <link rel="stylesheet" href="css/global.css">
     <title>Document</title>
 </head>
+<style>
+  .alpha {
+  background: white;
+  color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: MyTupi;
+  font-size: 100px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  mix-blend-mode: difference;
+}
+
+
+.section {
+    scroll-snap-align: start;
+  height: 100vh; /* each section fills the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  mix-blend-mode: difference;
+}
+
+.bravo {
+
+  background: white;
+  color: #b4975a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: MyTupi;
+  font-size: 100px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  mix-blend-mode: difference;
+}
+
+.charlie {
+  background: black;
+  color: #b4975a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: MyTupi;
+  font-size: 100px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  mix-blend-mode: difference;
+}
+</style>
 <body>
-    <h1>Index HTML webpage</h1>
-    <img src="images/OIP.jpg">
+ <header class="nav-header nav-dark">
+  <a href="index.html">HOME</a>
+  <a href="bookings.html">BOOKING</a>
+  <a href="destinations.html">DESTINATIONS</a>
+  <a href="contact.html">CONTACT</a>
+</header>
+
+<header class="nav-header nav-light">
+  <a href="index.html">HOME</a>
+  <a href="bookings.html">BOOKING</a>
+  <a href="destinations.html">DESTINATIONS</a>
+  <a href="contact.html">CONTACT</a>
+</header>
+  <section class="content">
+  <h1>"22151"</h1>
+  <p>ESTABLISHED 2023.</p>
+  </section>
+
+  <section class="alpha">
+  <h2>000</h2>
+  </section>
+
+  <section class="bravo">
+    <h1>111</h1>
+  </section>
+
+  <section class="charlie">
+    <h1>222</h1>
+  </section>
+
+  <section class="site-footer">
+    <div class="footer-content">
+      <a href="index.html">HOME</a>
+      <a href="bookings.html">BOOKING</a>
+      <a href="destinations.html">DESTINATIONS</a>
+      <a href="contact.html">CONTACT</a>
+      <p>&copy; 2025 "22151" - C.L. - A.W.R.</p>
+    </div>
+  </section>
+
 </body>
 </html>
