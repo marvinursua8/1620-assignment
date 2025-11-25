@@ -45,8 +45,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  padding: 20px 100 px;
+  height: 100vh;
+  padding: 20px 100px;
 }
 
 .container:after {
@@ -70,6 +70,9 @@ body {
   text-align: center;
   background-color: #fff;
   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
 
 }
 
@@ -79,7 +82,7 @@ body {
 }
 
 .right {
-  padding: 25px 40 px;
+  padding: 25px 40px;
 }
 
 h2 {
@@ -97,14 +100,14 @@ h2:after {
   height: 4px;
   width: 50px;
   border-radius: 2px;
-  background-color: #2ecc71;
+  background-color: #F49586;
 }
 
 .field {
   width: 100%;
   padding: 0.5rem 1rem;
   outline: none;
-  border: 2 px solid rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
   background-color: rgba(230, 230, 230, 0.6);
   font-size: 1.1rem;
   margin-bottom: 22px;
@@ -128,7 +131,7 @@ h2:after {
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
-  background-color: #2ecc71;
+  background-color: #F49586;
   cursor: pointer;
   outline: none;
   border: none;
@@ -136,7 +139,7 @@ h2:after {
 }
 
 .button:hover {
-  background-color: #27ae60;
+  background-color: #E07F71;
 }
 
 @media screen and (max-width: 2640px){
