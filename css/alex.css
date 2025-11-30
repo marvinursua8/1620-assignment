@@ -1,0 +1,198 @@
+
+
+/*body{
+    margin: 0;
+    background-image: url("/images/Vancouver_night.jpg");    <------    /* unmute this in case we didnt like the blur effect 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center ;
+    background-size: cover;
+    
+}*/
+
+body {
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/Vancouver_night.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);   /* <--- Adjust blur amount here */
+    z-index: -1;          /* <--- Keeps blur BEHIND everything */
+    transform: scale(1.1); /* prevents edge clipping */
+}
+
+form {
+    background: linear-gradient(to right, white, rgb(198, 217, 224) ,white);
+    opacity: 0.9;
+    border-style: outset;
+    border-width: 5px;
+    border-radius: 4px;
+    width: 700px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    position: relative;
+} 
+
+
+
+.dob-group {
+    grid-column: 1 / span 2;  /* move DOB to middle of the row */
+
+}
+
+/* Keep email on column 4 */
+.email-field {
+    grid-column: 3 /span 2;
+}
+
+/* Make DOB boxes line up in a mini-row */
+.dob-row {
+    display: flex;
+    gap: 49px;
+    align-items: center;
+}
+
+.section {
+    padding: 10px 0 15px;
+    border-bottom: 1px solid #ccc;
+} 
+
+input {
+    margin-bottom: 15px;  /* space below the input */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.box1{
+    height: 30px;
+    width: 50px;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+
+.box2 {
+    height: 30px;
+    width: 78%;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+
+.box3 {
+    height: 30px;
+    width: 78%;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.box4 {
+    height: 30px;
+    width: 90%;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+
+
+
+#bottoms {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn{
+    background-color: antiquewhite;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 3px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+  
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+    margin-bottom: 10px;
+}
+.nav-header {
+ color: black;
+  position: sticky;       /* stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;         /* above everything else */
+  font-family: MyTupi;
+  font-size: 20px;
+}
+
+.nav-header a:hover,
+.nav-header a:focus,
+.nav-header a:active {
+  text-decoration: none;   /* no underline */
+  background: none;        /* remove any highlight */
+}
+
+.nav-header a{
+  color: white;
+  text-decoration: none;   /* remove underline */
+  margin: 0 20px;
+  font-weight: 500;
+  font-family: MyTupi;
+  outline: none;
+  mix-blend-mode: difference;
+}
+
+
+.box1:hover {
+  background-color: rgba(136, 125, 125, 0.26)
+}
+
+.box2:hover {
+  background-color: rgba(136, 125, 125, 0.26)
+}
+
+.box3:hover {
+  background-color: rgba(136, 125, 125, 0.26)
+}
+
+.box4:hover {
+  background-color: rgba(136, 125, 125, 0.26)
+}
+.btn:hover {
+  background-color: rgba(250, 235, 215, 0.404);
+}

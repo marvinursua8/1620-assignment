@@ -2,32 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-    <link rel="icon" href="images/logo.png" type="image/png">
-    <title> Vancouver Destination </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/alex.css">
+    
 </head>
 <body>
-<header>
-    <h1> Book your desired trip now </h1>
-    <p> Enjoy a membrable trip with Vancouver destination</p>
 
-</header>
-<table>
-    <tr>
-        <td>
-            <article>
-            <img src="images/b4.jpg" alt="Flyover in Vancouver" width="250">
-            <h3>Flyover in Vancouver</h3>
-            <p>25 minutes</p>
-            <p>From $30</p>
-            </article>
-        </td>
-     <td valign="middle">
-        <article>
-        <img src="images/harrison.jpg" alt="Harrison Hot Spring" width="250">
-        </article>
-    </td>
-    </tr>
-    </table>
+    <header class="nav-header">
+    <a href="index.html">HOME</a>
+    <a href="bookings.html">BOOKING</a>
+    <a href="destinations.html">DESTINATIONS</a>
+    <a href="contact.html">CONTACT</a>
+    </header>
+
+    <br>
+
+    <form action="finalpage.html" method="GET">
+
+        <div class="section">
+            <h3 class="info"> Adult 1 &nbsp; Lead Passanger </h3>
+
+            <!--Row 1-->
+
+            <div class="row">
+                <div class="field">
+                    <label for="title1">Title:</label>
+                    <input type="text" class="box1" id="title1" name="title1">
+                </div>
+            
+                <div class="field">
+                    <label for="fname1">First Name:</label>
+                    <input type="text" id="fname1" class="box3" name="fname1" required>
+                </div>
+
+                <div class="field">
+
+                    <label for="mname1">Middle Name:</label>
+                    <input type="text" id="mname1" class="box2" name="mname1">
+                </div>
+
+                <div class="field">      
+                    <label for="lname1">Last Name:</label>
+                    <input type="text" id="lname1" class="box2" name="lname1" required>
+                </div>
+
+                <!-- Row 2 (DOB)-->
+                    
+                <div class = "dob-group">
+                    <label for="dob1">Date of Birth:</label>
+                    <div class="dob-row">
+                        <input type="number" class="box1" id="dob1" name="dob1" placeholder="YYYY">
+                        <input type="number" class="box1" id="dob-month1" name="dob-month1" placeholder="MM" min="1" max="12">
+                        <input type="number" class="box1" id="dob-day1" name="dob-day1" placeholder="DD" min="1" max="31"> 
+                    </div>
+                </div>
+
+                <!--email field-->
+
+                <div class="email-field">
+                    <label for="email1">Email:</label>
+                    <input type="email" id="email1" class="box4" name="email1" required>
+                </div>
+            </div>
+        </div>
+
+        <!--Adult 2-->
+
+        <div class="section">
+            <h3 class="info"> Adult 2 &nbsp; Guest </h3>
+            <div class="row">
+                <div class="field">
+                    <label for="title2">Title:</label>
+                    <input type="text" class="box1" id="title2" name="title2">
+                </div>
+            
+                <div class="field">
+                    <label for="fname2">First Name:</label>
+                    <input type="text" id="fname2" class="box3" name="fname2">
+                </div>
+
+                <div class="field">
+
+                    <label for="mname2">Middle Name:</label>
+                    <input type="text" id="mname2" class="box2" name="mname2">
+                </div>
+
+                <div class="field">      
+                    <label for="lname2">Last Name:</label>
+                    <input type="text" id="lname2" class="box2" name="lname2">
+                </div>
+
+                <!-- Row 2 (DOB + Email)-->
+                    
+                <div class = "dob-group">
+                    <label for="dob2">Date of Birth:</label>
+                    <div class="dob-row">
+                        <input type="number" class="box1" id="dob2" name="dob2" placeholder="YYYY">
+                        <input type="number" class="box1" id="dob-month2" name="dob-month2" placeholder="MM" min="1" max="12">
+                        <input type="number" class="box1" id="dob-day2" name="dob-day2" placeholder="DD" min="1" max="31"> 
+                    </div>
+                </div>
+
+                <!--email field-->
+
+                <div class="email-field">
+                    <label for="email2">Email:</label>
+                    <input type="email" id="email2" class="box4" name="email2">
+                </div>
+            </div>
+        </div>
+        <div id="bottoms">
+            <input type="submit" value= "Submit" class="btn">
+            <input type="reset"  value= "Rest" class="btn">
+        </div>
+    </form>
 </body>
 </html>
