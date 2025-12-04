@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <link rel="stylesheet" href="css/alex.css">
-    
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/alex.css">
+     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header class="nav-header">
     <a href="index.html">HOME</a>
     <a href="bookings.html">BOOKING</a>
+    <img src="images/Logo.png" alt="Whistler" class="logo">
     <a href="destinations.html">DESTINATIONS</a>
     <a href="contact.html">CONTACT</a>
     </header>
@@ -53,7 +54,7 @@
                 <div class = "dob-group">
                     <label for="dob1">Date of Birth:</label>
                     <div class="dob-row">
-                        <input type="number" class="box1" id="dob1" name="dob1" placeholder="YYYY">
+                        <input type="number" class="box1" id="dob1" name="dob1" placeholder="YYYY"min="1950" max="2025">
                         <input type="number" class="box1" id="dob-month1" name="dob-month1" placeholder="MM" min="1" max="12">
                         <input type="number" class="box1" id="dob-day1" name="dob-day1" placeholder="DD" min="1" max="31"> 
                     </div>
@@ -99,7 +100,7 @@
                 <div class = "dob-group">
                     <label for="dob2">Date of Birth:</label>
                     <div class="dob-row">
-                        <input type="number" class="box1" id="dob2" name="dob2" placeholder="YYYY">
+                        <input type="number" class="box1" id="dob2" name="dob2" placeholder="YYYY"min="1950" max="2025">
                         <input type="number" class="box1" id="dob-month2" name="dob-month2" placeholder="MM" min="1" max="12">
                         <input type="number" class="box1" id="dob-day2" name="dob-day2" placeholder="DD" min="1" max="31"> 
                     </div>
@@ -118,5 +119,14 @@
             <input type="reset"  value= "Rest" class="btn">
         </div>
     </form>
+    <section class="site-footer">
+    <div class="footer-content">
+      <a href="index.html">HOME</a>
+      <a href="bookings.html">BOOKING</a>
+      <a href="destinations.html">DESTINATIONS</a>
+      <a href="contact.html">CONTACT</a>
+      <p>&copy; 2025 "22151" - C.L. - A.W.R.</p>
+    </div>
+  </section>
 </body>
 </html>

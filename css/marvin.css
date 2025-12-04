@@ -225,3 +225,10 @@ img {
   text-decoration: none;
   outline: none;
 }
+
+.logo {
+    display: flex;
+    width: 95px;
+    margin-top: 1%;
+    border-radius: 200px;
+}

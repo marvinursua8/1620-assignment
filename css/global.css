@@ -18,5 +18,9 @@ img {
     height: auto;
 }
 
-
-
+.logo {
+    display: flex;
+    width: 4%;
+    margin-top: 1%;
+    border-radius: 200px;
+}

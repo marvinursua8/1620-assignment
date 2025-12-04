@@ -106,3 +106,9 @@ h2:after {
     height: 200px
   }
 }
+.logo {
+    display: flex;
+    width: 95px;
+    margin-top: 1%;
+    border-radius: 200px;
+}
